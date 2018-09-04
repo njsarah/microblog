@@ -1,6 +1,5 @@
 import os
-import logging
-from logging.handlers import SMTPHandler
+
 basedir = os.path.abspath(os.path.dirname(__file__))
 class Config(object):
 	SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-will-never-guess'
@@ -13,4 +12,5 @@ class Config(object):
 	MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
 	MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
 	ADMINS = ['379689211@qq.com']
+	LANGUAGES = ['en','es']
 	POSTS_PER_PAGE=25
